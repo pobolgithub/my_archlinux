@@ -1,0 +1,18 @@
+2022/09/02-10:26:09.936 3 Reusing MANIFEST /home/vlad/.config/chromium/Default/Local Storage/leveldb/MANIFEST-000001
+2022/09/02-10:26:09.937 3 Recovering log #46
+2022/09/02-10:26:09.937 3 Reusing old log /home/vlad/.config/chromium/Default/Local Storage/leveldb/000046.log 
+2022/09/02-10:27:10.313 3 Level-0 table #50: started
+2022/09/02-10:27:10.351 3 Level-0 table #50: 110957 bytes OK
+2022/09/02-10:27:10.354 3 Delete type=0 #46
+2022/09/02-10:27:10.355 3 Compacting 4@0 + 1@1 files
+2022/09/02-10:27:10.361 3 Generated table #51@0: 314 keys, 167660 bytes
+2022/09/02-10:27:10.361 3 Compacted 4@0 + 1@1 files => 167660 bytes
+2022/09/02-10:27:10.363 3 compacted to: files[ 0 1 1 0 0 0 0 ]
+2022/09/02-10:27:10.363 3 Delete type=2 #40
+2022/09/02-10:27:10.364 3 Delete type=2 #42
+2022/09/02-10:27:10.364 3 Delete type=2 #44
+2022/09/02-10:27:10.364 3 Delete type=2 #47
+2022/09/02-10:27:10.364 3 Delete type=2 #50
+2022/09/02-10:29:40.710 7 Level-0 table #53: started
+2022/09/02-10:29:40.723 7 Level-0 table #53: 51599 bytes OK
+2022/09/02-10:29:40.726 7 Delete type=0 #49

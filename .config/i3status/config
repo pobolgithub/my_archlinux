@@ -1,0 +1,106 @@
+# i3status configuration file.
+# see "man i3status" for documentation.
+
+# It is important that this file is edited as UTF-8.
+# The following line should contain a sharp s:
+# ß
+# If the above line is not correctly displayed, fix your editor first!
+
+general {
+        colors = true
+        interval = 5
+}
+order += "volume master"
+order += "wireless _first_"
+#order += "ethernet _first_"
+order += "battery all"
+#order += "disk /"
+#order += "load"
+order += "cpu_usage"
+order += "memory"
+order += "tztime local"
+
+wireless _first_ {
+    # шаблон вывода, можно дополнить
+    # наименованием подключения %essid
+    # и ip адресом %ip
+    format_up = "  %frequency "
+    format_down = "W: down"
+}
+
+ethernet _first_ {
+        format_up = "E: %ip (%speed)"
+        format_down = "E: down"
+}
+
+
+volume master {
+format = "  %volume "
+format_muted = ""
+device = "default"
+mixer = "Master"
+mixer_idx = 0
+
+}
+disk "/" {
+        format = "%avail"
+}
+
+load {
+        format = "%1min"
+}
+cpu_usage {
+    # %usage - процентное использование ЦП
+    # %cpu<N> - начиная с %cpu0 и далее показывает использование ядер
+    format = "  %usage "
+
+    # доступны параметры:
+    # degraded_threshold, окрас в желтый, по умолчанию 90
+    # max_threshold, окрас в красный, по умолчанию 95
+    # и кастомные форматы для них
+    # format_above_degraded_threshold и format_above_threshold
+}
+
+battery all {
+    # шаблон вывода, можно дополнить
+    # оставшимся временем работы %emptytime
+    # энергопотреблением %consumption в ваттах
+    format = " %status %percentage "
+
+    # true - показ процента заряда от 0 до 100
+    # false - показ процента заряда от 0 до n, с учетом
+    # изношенности аккумулятора
+    last_full_capacity = true
+    format_down = "No battery"
+    status_chr = "  " # статус подзарядки
+    status_bat = "  " # статус в режиме работы от батареи
+    status_unk = " ? UNK " # неизвестный статус
+    status_full = "  " # статус полного заряда
+    path = "/sys/class/power_supply/BAT%d/uevent"
+
+    # нижний порог заряда, после которого блок
+    # будет окрашен в "color_bad" (по умолчанию красный)
+    # подробнее в man i3status
+    low_threshold = 10
+}
+
+memory {
+    # доступные переменные:
+    # %total, percentage_total
+    # %used, percentage_used
+    # %free, percentage_free
+    # %available, percentage_available
+    # %shared, percentage_shared
+    format = "  %used "
+
+    # порог, при котором вывод окрасится в
+    # желтый (degraded) или красный (critical)
+    # а формат вывода изменится на format_degraded
+    threshold_degraded = "1G"
+    threshold_critical = "200M"
+    format_degraded = "MEMORY < %available"
+}
+
+tztime local {
+    format = "  %d %b   %H:%M "
+}

@@ -1,0 +1,31 @@
+{
+   "author": "Quick Translation",
+   "background": {
+      "persistent": true,
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_popup": "html/popup.html",
+      "default_title": "__MSG_name__"
+   },
+   "content_scripts": [ {
+      "css": [ "css/content.css" ],
+      "js": [ "js/content.js" ],
+      "matches": [ "\u003Call_urls>" ]
+   } ],
+   "content_security_policy": "script-src 'self' https://www.google-analytics.com; object-src 'self'",
+   "default_locale": "en",
+   "description": "__MSG_description__",
+   "icons": {
+      "128": "icons/icon-128.png",
+      "16": "icons/icon-16.png",
+      "48": "icons/icon-48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjjGSWQALFARW7caKXlXB0eZnsqMMJj/uFY1O2/D9piqPmnIC3FqRLGWdo1L+GZIpn3LLlWFgkIF0GgQjufSas0A37sXRpHcW+4l+9VjJjDqrLz1/LoETk7C22BJt/G6I1ggcfP1sPYQIzRqNn4hYETHzSKRyX7/RInQZUkNDJznDw9NAUhZ298J1bQIxiWMTwMWILSqU0y2djsvYIBRYnGU9YcwklXazIZV7Xhz8BiRE5NLE9dQfEsxWbq84xallHBEUrcjmwKvv2wlzEQtRdr2uHXfXDSfUTitDOGfKOA46aO/4lFb4/QsLr/odw0VvjJ1EpxmUM2AjIvBIOHHBowIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_name__",
+   "permissions": [ "\u003Call_urls>", "webRequest", "webRequestBlocking", "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.3.1",
+   "web_accessible_resources": [ "icons/*" ]
+}

@@ -1,0 +1,47 @@
+{
+   "checksum": "82d996e81542e9755a81f3a3704447c6",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13306574723982202",
+            "guid": "61611a8d-ec18-454d-acda-d2d6716025bc",
+            "id": "5",
+            "name": "Quick Translation - Chrome Web Store",
+            "type": "url",
+            "url": "https://chrome.google.com/webstore/detail/quick-translation/lmcboojgmmaafdmgacncdpjnpnnhpmei/related?hl=en"
+         } ],
+         "date_added": "13306574506260681",
+         "date_modified": "13306577139436612",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [ {
+            "date_added": "13306577139436612",
+            "guid": "ee061b7c-0f82-4826-8c12-9c0b52f61c52",
+            "id": "7",
+            "name": "YouTube",
+            "type": "url",
+            "url": "https://www.youtube.com/"
+         } ],
+         "date_added": "13306574506260685",
+         "date_modified": "13306577158720017",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13306574506260687",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

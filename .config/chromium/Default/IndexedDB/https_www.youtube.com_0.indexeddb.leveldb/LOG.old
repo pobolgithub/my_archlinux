@@ -1,0 +1,4 @@
+2022/09/02-10:52:24.274 2fa Reusing MANIFEST /home/vlad/.config/chromium/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/09/02-10:52:24.274 2fa Recovering log #19
+2022/09/02-10:52:24.285 2fa Reusing old log /home/vlad/.config/chromium/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000019.log 
+2022/09/02-10:52:24.285 2fa Delete type=2 #18
